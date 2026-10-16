@@ -7,3 +7,6 @@ node_modules
 .ponytail-active
 .crush/
 .claude/settings.local.json
+
+# Claude Code auto-downloaded example skills, regenerated on sync
+/skills/synced/
