@@ -32,10 +32,11 @@
       "command": ["npx", "-y", "@sveltejs/mcp"],
       "enabled": true,
     },
-    "wix-mcp-remote": {
-      "type": "remote",
-      "url": "https://mcp.wix.com/mcp",
-      "enabled": true,
-    },
+    // disabled: prompts Wix OAuth on every start; re-enable if working on Wix apps
+    // "wix-mcp-remote": {
+    //   "type": "remote",
+    //   "url": "https://mcp.wix.com/mcp",
+    //   "enabled": true,
+    // },
   },
 }

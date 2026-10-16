@@ -8,7 +8,7 @@
 #   ~/.claude/CLAUDE.md -> AGENTS.md   (global ponytail persona, applies to every project)
 #   ponytail hooks (SessionStart, UserPromptSubmit, SubagentStart) registered in
 #     ~/.claude/settings.json, so Claude Code enforces the same ruleset as opencode
-#   MCP servers (context7, playwright, svelte, wix) at user scope via `claude mcp add`
+#   MCP servers (context7, playwright, svelte) at user scope via `claude mcp add`
 #
 # Ends with verify() -- a partial install used to exit 1 with no explanation and
 # silently leave CLAUDE.md and commands/ unlinked.
@@ -108,7 +108,8 @@ if command -v claude >/dev/null 2>&1; then
   add_mcp_http context7 "https://mcp.context7.com/mcp"
   add_mcp_stdio playwright npx @playwright/mcp@latest
   add_mcp_stdio svelte npx -y @sveltejs/mcp
-  add_mcp_http wix-mcp-remote "https://mcp.wix.com/mcp"
+  # disabled: prompts Wix OAuth on every start; re-enable if working on Wix apps
+  # add_mcp_http wix-mcp-remote "https://mcp.wix.com/mcp"
 else
   echo "warning: claude CLI not found, skipping MCP registration" >&2
 fi
