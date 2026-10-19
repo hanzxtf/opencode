@@ -32,6 +32,11 @@
       "command": ["npx", "-y", "@sveltejs/mcp"],
       "enabled": true,
     },
+    "paradedb": {
+      "type": "remote",
+      "url": "https://www.paradedb.com/docs/mcp",
+      "enabled": true,
+    },
     // disabled: prompts Wix OAuth on every start; re-enable if working on Wix apps
     // "wix-mcp-remote": {
     //   "type": "remote",

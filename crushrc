@@ -13,5 +13,6 @@ permissions allow view ls grep glob
 mcp add context7 --type http --url "https://mcp.context7.com/mcp"
 mcp add playwright --type stdio --command npx --args -y --args @playwright/mcp@latest
 mcp add svelte --type stdio --command npx --args -y --args @sveltejs/mcp
+mcp add paradedb --type http --url "https://www.paradedb.com/docs/mcp"
 # disabled: prompts Wix OAuth on every start; re-enable if working on Wix apps
 # mcp add wix --type http --url "https://mcp.wix.com/mcp" --oauth true --timeout 120

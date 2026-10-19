@@ -108,6 +108,7 @@ if command -v claude >/dev/null 2>&1; then
   add_mcp_http context7 "https://mcp.context7.com/mcp"
   add_mcp_stdio playwright npx @playwright/mcp@latest
   add_mcp_stdio svelte npx -y @sveltejs/mcp
+  add_mcp_http paradedb "https://www.paradedb.com/docs/mcp"
   # disabled: prompts Wix OAuth on every start; re-enable if working on Wix apps
   # add_mcp_http wix-mcp-remote "https://mcp.wix.com/mcp"
 else

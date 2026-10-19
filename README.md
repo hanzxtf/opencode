@@ -16,6 +16,8 @@ The `skills/viral-*` skills (`viral-hooks`, `viral-short-form`, `viral-short-for
 
 The `skills/ig-*` skills (`ig-hook-extractor`, `ig-caption-writer`, `ig-carousel-planner`, `ig-content-planner`, `ig-hashtag-strategist`, `ig-audience-insights`, `ig-repurposer`, `ig-profile-optimizer`, `ig-humanizer`) are from [sergebulaev/instagram-skills](https://github.com/sergebulaev/instagram-skills), licensed under the [MIT License](https://opensource.org/licenses/MIT). See each skill's `LICENSE`. Not vendored: the repo root router (`name: instagram-marketing`) — it links to `skills/<name>` paths that do not resolve in this flat layout — and the `.codex-marketplace/` duplicate tree.
 
+The `skills/paradedb-skill` skill is from [paradedb/agent-skills](https://github.com/paradedb/agent-skills), licensed under the [MIT License](https://opensource.org/licenses/MIT). See `skills/paradedb-skill/LICENSE`. Vendored: `SKILL.md`, `EXAMPLES.md`, `scripts/paradedb-docs` (fetches pages from the live docs site). Not vendored: the repo README, whose install instructions assume the repo layout.
+
 The `skills/ffmpeg` skill is from [n0an/ffmpeg-skill](https://github.com/n0an/ffmpeg-skill), licensed under the [MIT License](https://opensource.org/licenses/MIT). See `skills/ffmpeg/LICENSE`.
 
 The `skills/auto-subtitles` skill is from [sketch-man/claude-skill-auto-subtitles](https://github.com/sketch-man/claude-skill-auto-subtitles), licensed under the [MIT License](https://opensource.org/licenses/MIT). See `skills/auto-subtitles/LICENSE`.
