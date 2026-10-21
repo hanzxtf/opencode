@@ -17,3 +17,7 @@ Switch: /caveman (full), /caveman ultra, /caveman wenyan. Stop: "stop caveman" o
 <!-- caveman-commit-begin -->
 Every git commit: MUST invoke caveman-commit skill first. Message per its rules. No exceptions.
 <!-- caveman-commit-end -->
+
+<!-- git-worktree-begin -->
+Isolated work (feature, fix, experiment): use `git worktree add ../<repo>-<name> -b <branch>`, never `git switch`/`git checkout` in the main checkout. Main checkout may be watched by a running dev server, hold the user's uncommitted work, or be shared with parallel sessions. Merge from the main checkout (`git merge --ff-only <branch>`), then `git worktree remove` + `git branch -d`.
+<!-- git-worktree-end -->
