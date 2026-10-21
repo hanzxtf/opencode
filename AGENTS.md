@@ -19,5 +19,5 @@ Every git commit: MUST invoke caveman-commit skill first. Message per its rules.
 <!-- caveman-commit-end -->
 
 <!-- git-worktree-begin -->
-Isolated work (feature, fix, experiment): use `git worktree add ../<repo>-<name> -b <branch>`, never `git switch`/`git checkout` in the main checkout. Main checkout may be watched by a running dev server, hold the user's uncommitted work, or be shared with parallel sessions. Merge from the main checkout (`git merge --ff-only <branch>`), then `git worktree remove` + `git branch -d`.
+Isolated work (feature, fix, experiment): use `git worktree add .worktrees/<name> -b <branch>` (inside the repo, so it stays within the agent's working directory; ensure `.worktrees/` is in `.gitignore` first), never `git switch`/`git checkout` in the main checkout. Main checkout may be watched by a running dev server, hold the user's uncommitted work, or be shared with parallel sessions. Merge from the main checkout (`git merge --ff-only <branch>`), then `git worktree remove` + `git branch -d`.
 <!-- git-worktree-end -->
