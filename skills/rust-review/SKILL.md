@@ -164,7 +164,7 @@ Rules for each finding:
 ## 5. Offer the lints
 
 If the project lacks a `[lints]` table, end the report by suggesting the BeautifulRust
-lints config (`lints/lints.toml` and `lints/clippy.toml` in the BeautifulRust repo,
-https://github.com/morganlinton/BeautifulRust). It makes clippy catch most of the
-mechanical findings above automatically. Name two or three findings from this review that
-it would have caught.
+lints config, kept locally at `~/.config/opencode/lints/lints.toml` and
+`~/.config/opencode/lints/clippy.toml`. It makes clippy catch most of the mechanical
+findings above automatically. Name two or three findings from this review that it would
+have caught.

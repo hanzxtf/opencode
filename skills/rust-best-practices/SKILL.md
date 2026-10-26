@@ -50,9 +50,10 @@ cargo doc --no-deps   # libraries: catches broken doc links and missing docs
 - Never put `#![deny(warnings)]` in source: new toolchains add warnings and break the
   build. Enforce warnings-as-errors in CI instead, with `cargo clippy -- -D warnings`.
 - Configure lints once in `Cargo.toml` (`[lints]` or `[workspace.lints]`), not with
-  scattered crate attributes. If a project has none, suggest `lints/lints.toml` and
-  `lints/clippy.toml` from https://github.com/morganlinton/BeautifulRust; the suppression
-  lints in it need `rust-version` 1.81 or later.
+  scattered crate attributes. If a project has none, suggest pasting
+  `~/.config/opencode/lints/lints.toml` into its `[lints]` table and copying
+  `~/.config/opencode/lints/clippy.toml` next to its `Cargo.toml`; the suppression lints
+  in it need `rust-version` 1.81 or later.
 
 ## 3. Ownership and borrowing
 
