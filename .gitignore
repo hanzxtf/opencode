@@ -10,3 +10,6 @@ node_modules
 
 # Claude Code auto-downloaded example skills, regenerated on sync
 /skills/synced/
+
+# Local service config, machine-specific
+service.json
